@@ -20,3 +20,15 @@ class Post(Base):
     created_at = Column(DateTime, default=datetime.utcnow)
     is_active = Column(Boolean, default=True)
 
+    comments = relationship("Comment", back_populates="comments")
+
+
+class Comment(Base):
+    __tablename__ = "comments"
+
+    id = Column(UUID(as_uuid=True), default=uuid.uuid4, primary_key=True, index=True)
+    comment = Column(String, index=True)
+    user_id = Column(UUID, ForeignKey("users.id"))
+    post = relationship("Post", back_populates="comments")
+    created_at = Column(DateTime, default=datetime.utcnow)
+    is_active = Column(Boolean, default=True)
