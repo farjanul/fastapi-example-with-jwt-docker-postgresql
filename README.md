@@ -4,9 +4,10 @@ The task is to create a simple blog application using latest `FastAPI` framework
 
 ## Step
 - FastApi (Python 3.10 or above)
-- Use PostgreSQL database
+- Use the PostgreSQL database
 - JWT for authentication
-- Docker for run the project
+- User verification and SMTP configuration
+- Docker to run the project
 
 ## Build with
 * [Python v3.10](https://www.python.org/)
