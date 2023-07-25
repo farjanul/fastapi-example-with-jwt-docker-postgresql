@@ -36,7 +36,7 @@ pydantic-settings==2.0.2
 
 ## Installation
 
-You can easily set up the project by following the steps below. In that case, `Docker` and `Docker Compose` are required if `run with docker`.
+You can easily set up the project by following the steps below. In that case, `Docker` and `Docker Compose` are required.
 
 1. Clone the repo
    ```sh
@@ -47,15 +47,11 @@ You can easily set up the project by following the steps below. In that case, `D
 4. Import collection of API into (Postman) from doc directory. [Here](https://github.com/farjanul/fastapi-example-with-jwt-docker-postgresql/blob/master/doc/FastAPI%20Demo.postman_collection.json)
 5. Or follow the swagger API documentation `http://127.0.0.1:8000/docs`
 
-### Run with Docker
+### Run
   ```sh
   docker-compose up --build -d
   ```
 
-### Manualy Run
-  ```sh
-  uvicorn main:app --reload --host 0.0.0.0 --port 8000
-  ```
 ## Let's Enjoy
 ```
 http://127.0.0.1:8000
