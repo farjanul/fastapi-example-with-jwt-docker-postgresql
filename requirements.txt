@@ -1,0 +1,13 @@
+alembic==1.11.1
+email-validator==2.0.0.post2
+fastapi==0.100.0
+fastapi-pagination==0.12.6
+passlib==1.7.4
+psycopg2==2.9.6
+pydantic==2.0.3
+PyJWT==2.8.0
+SQLAlchemy==2.0.19
+uvicorn==0.23.1
+python-dotenv==1.0.0
+bcrypt==4.0.1
+pydantic-settings==2.0.2
